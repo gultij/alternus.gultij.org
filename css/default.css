@@ -1,0 +1,13 @@
+html {
+	font-family: sans-serif;
+}
+
+div.content div.screenshot {
+	display: block;
+	text-align: center;
+	font-size: small;
+}
+
+h1 {
+	border-bottom: 1px solid black;
+}
