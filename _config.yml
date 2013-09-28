@@ -1,9 +1,0 @@
-name: "Rodeo"
-description: ""
-
-url: "http://alvarezp.github.io/alternativas.gultij.org/"
-paginate: 10
-
-markdown: rdiscount
-permalink: pretty
-
