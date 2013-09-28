@@ -1,0 +1,8 @@
+name: "Alternativas"
+description: ""
+
+url: "http://alternativas.gultij.org/"
+paginate: 10
+
+markdown: rdiscount
+permalink: pretty
