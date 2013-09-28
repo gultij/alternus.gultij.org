@@ -8,6 +8,12 @@ div.content div.screenshot {
 	font-size: small;
 }
 
+div.content div.screenshot img {
+	border: 2px solid black;
+	border-radius: 5px;
+	padding: 5px;
+}
+
 h1 {
 	border-bottom: 1px solid black;
 }
