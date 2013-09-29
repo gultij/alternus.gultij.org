@@ -1,9 +1,9 @@
 ---
-title: Cablemás Soporte&#58; Herramientas
+title: Cablemás&#58; página de herramientas de soporte
 layout: ficha
 
 f_creacion: 2013-09-28
-f_revision: 2013-09-28
+f_revision: 2013-09-29
 
 liga: http://personal.cablemas.com/soportecablemas/soporte/herramientas.html
 
