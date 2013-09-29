@@ -1,7 +1,7 @@
 ¡Bienvenido al proyecto Alternativas!
 =====================================
 
-Alternativas es una collección comunitaria de fichas técnicas con soluciones, alternativas y rodeos de compatibilidad entre el Software Libre y el día a día de nuestra ciudad. Por ejemplo:
+Alternativas es una colección comunitaria de fichas técnicas con soluciones, alternativas y rodeos de compatibilidad entre el Software Libre y el día a día de nuestra ciudad. Por ejemplo:
 
 * Un usuario quiere comenzar a usar Ubuntu pero su banca en línea usa un ActiveX. En *Alternativas* podemos documentar la opción de usar Virtualbox que, aunque dista de ser lo óptimo, le funcionaría.
 
@@ -11,7 +11,7 @@ Alternativas es una collección comunitaria de fichas técnicas con soluciones, 
 
 * El sitio de la Secretaría de ____________, ofrece una aplicación para descargar, pero es un .exe para Win32. Gracias a *Alternativas* se entera que alguien lo ha hecho funcionar con Wine usando versiones específicas de ciertos DLL de Microsoft.
 
-* El *otro* sitio de la Secreataría de _______________, ofrece una aplicación, otro .exe y sirve para hacer un cálculo. El cálculo es muy simple y alguien implementó una alternativa en una hoja de LibreOffice Calc. La hoja se podría publicar en Alternativas.
+* El *otro* sitio de la Secretaría de _______________, ofrece una aplicación, otro .exe y sirve para hacer un cálculo. El cálculo es muy simple y alguien implementó una alternativa en una hoja de LibreOffice Calc. La hoja se podría publicar en Alternativas.
 
 * Un ISP recibe algunos reportes de que gente con Linux no puede entrar a la sección de facturación. Como son pocos no piensan darle soporte a corto plazo de manera oficial, es decir, no quieren implementar procedimientos, cambios a sistema, etc. sólo para unos cuantos Linuxeros (así lo ven ellos). Sin embargo, alguno de sus ingenieros lo hizo funcionar y le permiten publicar el procedimiento en Alternativas aunque no sea soporte *oficial* y ellos sigan diciendo que no soportan Linux. Es más, tal vez a ese ingeniero le permitan darle mantenimiento a la ficha técnica mientras no lo haga bajo el nombre de la empresa.
 
