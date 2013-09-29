@@ -28,7 +28,7 @@ Las herramientas son scripts HTA que sólo son reconocidos por Internet Explorer
 
 Además, los scripts HTA están programados en VBScript, que sólo trabaja en Internet Explorer.
 
-Encima, esos scripts de VBScript internamente realizan llamadas a las instrucciones ping y traceroute usando su sintaxis específica y por medio de cmd.exe.
+Encima, esos scripts de VBScript internamente realizan llamadas a las instrucciones `ping` y `tracert` usando su sintaxis específica y por medio de cmd.exe.
 
 # Cómo corregirlo
 
@@ -42,9 +42,9 @@ Existen algunas alternativas. No olvides indicarle a Cablemás que debido a que 
 
 ## Ping y traceroute desde la terminal
 
-Cuando te pidan usar la herramienta ping, entra a una terminal y usa la instrucción "ping". Si te piden hacer ping a la dirección 4.2.2.2, usa la instrucción "ping 4.2.2.2". Deja pasar unos cuantos pings (digamos, 5) y cancela con Ctrl+C.
+Cuando te pidan usar la herramienta ping, entra a una terminal y usa la instrucción `ping`. Si te piden hacer ping a la dirección 4.2.2.2, usa la instrucción `ping 4.2.2.2`. Deja pasar unos cuantos pings (digamos, 5) y cancela con Ctrl+C.
 
-Cuando te pidan usar la herramienta traceroute, entra a una terminal y usa la instrucción "traceroute".
+Cuando te pidan usar la herramienta traceroute, entra a una terminal y usa la instrucción `traceroute`.
 
 ## GNOME Nettool
 
