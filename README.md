@@ -1,6 +1,3 @@
----
-layout: front
----
 ¡Bienvenido al proyecto Alternativas!
 =====================================
 
