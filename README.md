@@ -44,7 +44,7 @@ Cómo participar
 
 Si tienes cuenta en Github sólo dale *Fork*. Si no, usando Git clónalo con:
 
-	`git clone git@github.com:alvarezp/alternativas.gultij.org.git`
+	git clone git@github.com:alvarezp/alternativas.gultij.org.git
 
 * La discusión y propuesta de páginas nuevas, así como modificaciones a documentos existentes se pueden realizar por medio de los *Issues* de Github.
 
