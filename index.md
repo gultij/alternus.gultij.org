@@ -13,6 +13,12 @@ Alternativas es una collección de fichas descriptivas con alternativas y rodeos
 
 * Actualizar el sitio conforme haya mejoras en cada caso, de modo que los usuarios que usan Software Libre puedan considerarlos como una opción comercial.
 
+# Listado de fichas
+
+* [Cablemás Soporte: Herramientas](cablemas/soporte/herramientas/)
+
+# Cómo participar
+
 Colaborar con el proyecto Alternativas es fácil:
 
 * Su código está escrito en Jekyll y está hospedado en Github. Puedes clonar [el repositorio](http://www.github.com/alvarezp/alternativas.gultij.org/) fácilmente usando:
@@ -33,8 +39,3 @@ El alcance central abarca páginas y software de proveedores para el público en
 
 Si el sitio es meramente publicitario para una empresa privada, no es incluíble. Hay que usar el criterio para que el sitio no se convierta en un repositorio de publicidad. Por eso se le debe dar prioridad a sitios de gobierno y escuelas, así como a trámites problemáticos.
 
-# Listado de fichas
-
-<ul>
-	<li><a href="cablemas/soporte/herramientas/">Cablemás Soporte: Herramientas</a></li>
-</ul>
