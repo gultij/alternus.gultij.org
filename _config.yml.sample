@@ -1,7 +1,7 @@
 name: "Alternativas"
 description: ""
 
-url: "http://<username>.github.io/alternativas.gultij.org/"
+url: "http://<username>.github.io/alternativas.gultij.org"
 paginate: 10
 
 markdown: rdiscount
