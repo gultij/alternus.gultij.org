@@ -2,11 +2,24 @@
 
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-	<link rel="stylesheet" type="text/css" href="{{ site.url }}css/default.css" />
+	<link rel="stylesheet" type="text/css" href="{{ site.url }}/css/default.css" />
 </head>
 <body>
 
 {{content}}
+
+<!-- Listado de páginas  -- >
+<ul class="paginas-listado">
+{% for page in site.pages %}
+	{% if page.layout == 'ficha' %}
+	<li class="paginas-listado-entrada">
+		<a href="{{ site.url }}{{ page.url }}">
+			{{ page.title }}
+		</a>
+	</li>
+	{% endif %}
+{% endfor %}
+</ul>
 
 </body>
 </html>
