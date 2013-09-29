@@ -17,6 +17,16 @@ Alternativas es una collección de fichas descriptivas con alternativas y rodeos
 
 * [Cablemás Soporte: Herramientas](cablemas/soporte/herramientas/)
 
+# ¿Qué necesita el proyecto Alternativas?
+
+* Imagen del sitio
+
+* Difusión del proyecto
+
+* Contenido: reporte de fichas, revisión, validación de que los datos sean verdaderos y actuales, etc.
+
+* Evolucionar y mejorar.
+
 # Cómo participar
 
 Colaborar con el proyecto Alternativas es fácil:
