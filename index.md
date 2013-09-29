@@ -15,7 +15,18 @@ Alternativas es una collección de fichas descriptivas con alternativas y rodeos
 
 # Listado de fichas
 
-* [Cablemás Soporte: Herramientas](cablemas/soporte/herramientas/)
+<!-- Listado de páginas  -->
+<ul class="paginas-listado">
+{% for page in site.pages %}
+	{% if page.layout == 'ficha' %}
+	<li class="paginas-listado-entrada">
+		<a href="{{ site.url }}{{ page.url }}">
+			{{ page.title }}
+		</a>
+	</li>
+	{% endif %}
+{% endfor %}
+</ul>
 
 # ¿Qué necesita el proyecto Alternativas?
 
