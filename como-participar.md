@@ -19,7 +19,7 @@ Este es el método que nos ahorra más trabajo a nosotros.
 
 1. Realiza tus modificaciones. Las fichas están en archivos .md en formato Markdown.
 
-1. Ejecuta `jekyll -w serve` en el directorio raíz del repositorio y visita desde tu navegador [tu copia local de Alternativas](http://localhost:4000).
+1. Ejecuta `jekyll serve -w --config _config_local.yml` en el directorio raíz del repositorio y visita desde tu navegador [tu copia local de Alternativas](http://localhost:4000).
 
 1. *Commitea* los cambios con `git commit -a`. Usa un **buen** mensaje de commit: la primera línea debe ser concreta sobre lo que hiciste y después de un renglón en blanco, un párrafo que explique a detalle por qué era necesario el cambio. Un buen mensaje de commit permite a los desarrolladores contestar dudas sobre tu trabajo y tomar decisiones más precisas.
 
@@ -36,7 +36,7 @@ Este es el método que nos ahorra más trabajo a nosotros.
 
 1. Realiza tus modificaciones. Las fichas están en archivos .md en formato Markdown.
 
-1. Ejecuta `jekyll -w serve` en el directorio raíz del repositorio y visita desde tu navegador [tu copia local de Alternativas](http://localhost:4000).
+1. Ejecuta `jekyll serve -w --config _config_local.yml` en el directorio raíz del repositorio y visita desde tu navegador [tu copia local de Alternativas](http://localhost:4000).
 
 1. *Commitea* los cambios con `git commit -a`. Usa un **buen** mensaje de commit: la primera línea debe ser concreta sobre lo que hiciste y después de un renglón en blanco, un párrafo que explique a detalle por qué era necesario el cambio. Un buen mensaje de commit permite a los desarrolladores contestar dudas sobre tu trabajo y tomar decisiones más precisas.
 

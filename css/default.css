@@ -17,3 +17,10 @@ div.content div.screenshot img {
 h1 {
 	border-bottom: 1px solid black;
 }
+
+code {
+	background: #eee;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 2px;
+}
