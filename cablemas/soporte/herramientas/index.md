@@ -40,7 +40,7 @@ A modo de ejemplo se menciona *4.2.2.2* como dirección de destino. Para hacer 5
 
 Si le piden a uno usar la herramienta traceroute, basta con entrar a una terminal y usar la instrucción `traceroute` de la misma manera: `traceroute 4.2.2.2`. Traceroute tarda en completarse por la *resolución de nombres*. La resolución de nombres puede evitarse con la opción -n: `traceroute -n 4.2.2.2`, pero arroja sólo direcciones IP en lugar de nombres de host.
 
-OJO: hay una diferencia entre Windows y Linux con el traceroute. Windows realiza el traceroute usando internamente ICMP (algo como un ping) mientras que Linux lo hace por medio de UDP, por lo que los resultados pueden variar. Para emular el mismo traceroute que Windows, se usa la opción -I: 'traceroute -I 4.2.2.2' pero se requiere estar como el usuario *root*.
+OJO: hay una diferencia entre Windows y Linux con el traceroute. Windows realiza el traceroute usando internamente ICMP (algo como un ping) mientras que Linux lo hace por medio de UDP, por lo que los resultados pueden variar. Para emular el mismo traceroute que Windows, se usa la opción -I: `traceroute -I 4.2.2.2` pero se requiere estar como el usuario *root*.
 
 ## GNOME Nettool
 
