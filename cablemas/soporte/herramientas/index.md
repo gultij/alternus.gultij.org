@@ -61,6 +61,7 @@ Búscala en tu distribución. Por ejemplo:
 La dependencia en Windows y sus mecanismos internos es muy profunda. La única manera sería reprogramar todo de alguna manera compatible. Esto no es fácil por las implicaciones de seguridad. Posibilidades:
 
 * Un applet de Java. Dista mucho de ser lo ideal, sobre todo porque Java de repente se rompe debido a su conducción por Oracle.
+
 * Que el módem/router incluyera una página con herramientas ping y traceroute sin necesidad de login y que se redirigiera al usuario a estas herramientas que se ejecutarían desde el propio módem/router.
 
 # Cómo mejorar esta ficha
@@ -69,7 +70,7 @@ La dependencia en Windows y sus mecanismos internos es muy profunda. La única m
 
 * Incluir pantallazos de la herramienta funcionando bajo Windows para mostrar de la intención original del proveedor.
 
-* Ofrecer una implementación compatible de la herramienta que pudiera hospedarse en 'Alternativas'.
+* Ofrecer una implementación compatible de la herramienta que pudiera hospedarse en *Alternativas*.
 
 # Colaborador(es) de esta ficha
 
