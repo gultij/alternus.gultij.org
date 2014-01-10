@@ -83,13 +83,10 @@ Y también si quieres compilar la herramienta por tu cuenta lo puedes hacer sigu
 * Si solo te interesa utilizar Silverlight ejecuta ``sudo apt-get install pipelight``
 * Si te interesa utilizar otros plugins ejecuta ``sudo apt-get install pipelight-multi`` y para activarlos (ejemplo) ejecuta ``sudo pipelight-plugin --enable silverlight``.
 * Algunos sitios, como Netflix, no te permitirán utilizar los plugins debido al 'User Agent' del navegador por lo cual tendrás que cambiarlo.
-
-** En Firefox puedes utilizar [UAControl](https://addons.mozilla.org/en-us/firefox/addon/uacontrol/) ó [User Agent Overrider](https://addons.mozilla.org/en-US/firefox/addon/user-agent-overrider/) con los siguientes datos:
-
-*** Mozilla/5.0 (Windows NT 6.1; WOW64; rv:15.0) Gecko/20120427 Firefox/15.0a1
-*** Mozilla/5.0 (Windows NT 6.1; WOW64; rv:22.0) Gecko/20100101 Firefox/22.0
-*** Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20131011 Firefox/23.0
-
-** En Chrome puedes instalar [User Agent Switcher](https://chrome.google.com/webstore/detail/user-agent-switcher-for-c/djflhoibgkdhkhhcedjiklpkjnoahfmg) y escoger Windows Firefox 15 y es todo.
+    * En Firefox puedes utilizar [UAControl](https://addons.mozilla.org/en-us/firefox/addon/uacontrol/) ó [User Agent Overrider](https://addons.mozilla.org/en-US/firefox/addon/user-agent-overrider/) con los siguientes datos:
+        * Mozilla/5.0 (Windows NT 6.1; WOW64; rv:15.0) Gecko/20120427 Firefox/15.0a1
+        * Mozilla/5.0 (Windows NT 6.1; WOW64; rv:22.0) Gecko/20100101 Firefox/22.0
+        * Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20131011 Firefox/23.0
+    * En Chrome puedes instalar [User Agent Switcher](https://chrome.google.com/webstore/detail/user-agent-switcher-for-c/djflhoibgkdhkhhcedjiklpkjnoahfmg) y escoger Windows Firefox 15 y es todo.
 
 La imagen es original de http://www.iheartubuntu.com/2012/11/ppa-for-netflix-desktop-app.html
