@@ -54,6 +54,8 @@ Colaborar con el proyecto Alternativas es fácil:
 
 * Ojo: si algún sitio funciona muy bien, también hay que ponerlo.
 
+* Hay información paso a paso en [Cómo participar](como-participar), según si cuentas con Git, Github o una u otra versión de Jekyll.
+
 # Alcance del proyecto
 
 El alcance central abarca páginas y software de proveedores para el público en general, como transacciones, trámites y consultas en sitios de gobierno, bancos en línea, universidades públicas y privadas, proveedores de telefonía e Internet, empresas locales, etc.
