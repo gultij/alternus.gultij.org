@@ -1,5 +1,5 @@
 ---
-title: Chromium y flash
+title: Chromium y Flash
 layout: ficha
 
 f_creacion: 2014-01-10
