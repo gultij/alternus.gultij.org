@@ -40,7 +40,7 @@ A modo de ejemplo se menciona *4.2.2.2* como dirección de destino. Para hacer 5
 
 Si le piden a uno usar la herramienta traceroute, basta con entrar a una terminal y usar la instrucción `traceroute` de la misma manera: `traceroute 4.2.2.2`. Traceroute tarda en completarse por la *resolución de nombres*. La resolución de nombres puede evitarse con la opción -n: `traceroute -n 4.2.2.2`, pero arroja sólo direcciones IP en lugar de nombres de host.
 
-OJO: hay una diferencia entre Windows y Linux con el traceroute. Windows realiza el traceroute usando internamente ICMP (algo como un ping) mientras que Linux lo hace por medio de UDP, por lo que los resultados pueden variar. Para emular el mismo traceroute que Windows, se usa la opción -I: 'traceroute -I 4.2.2.2' pero se requiere estar como el usuario *root*.
+OJO: hay una diferencia entre Windows y Linux con el traceroute. Windows realiza el traceroute usando internamente ICMP (algo como un ping) mientras que Linux lo hace por medio de UDP, por lo que los resultados pueden variar. Para emular el mismo traceroute que Windows, se usa la opción -I: `traceroute -I 4.2.2.2` pero se requiere estar como el usuario *root*.
 
 ## GNOME Nettool
 
@@ -61,6 +61,7 @@ Búscala en tu distribución. Por ejemplo:
 La dependencia en Windows y sus mecanismos internos es muy profunda. La única manera sería reprogramar todo de alguna manera compatible. Esto no es fácil por las implicaciones de seguridad. Posibilidades:
 
 * Un applet de Java. Dista mucho de ser lo ideal, sobre todo porque Java de repente se rompe debido a su conducción por Oracle.
+
 * Que el módem/router incluyera una página con herramientas ping y traceroute sin necesidad de login y que se redirigiera al usuario a estas herramientas que se ejecutarían desde el propio módem/router.
 
 # Cómo mejorar esta ficha
@@ -69,7 +70,7 @@ La dependencia en Windows y sus mecanismos internos es muy profunda. La única m
 
 * Incluir pantallazos de la herramienta funcionando bajo Windows para mostrar de la intención original del proveedor.
 
-* Ofrecer una implementación compatible de la herramienta que pudiera hospedarse en 'Alternativas'.
+* Ofrecer una implementación compatible de la herramienta que pudiera hospedarse en *Alternativas*.
 
 # Colaborador(es) de esta ficha
 
