@@ -1,6 +1,6 @@
 ---
 title: Netflix y Linux
-layout: ficha
+layout: servicio
 
 f_creacion: 2014-01-10
 f_revision: 2014-01-10
@@ -60,7 +60,7 @@ Existen maneras sencillas de instalar Netflix-Desktop para Ubuntu, Arch y Fedora
 
 * No he intentado personalmente el proceso por lo cual prefiero dejar el [link](http://forums.fedoraforum.org/showthread.php?t=286230) a las instrucciones y que el interesado tome la decisión si desea o no seguirlas.
 
-## Ejecutar Silverlight desde cualquier navegador que soporte [NPAPI](http://en.wikipedia.org/wiki/NPAPI).
+## Usar [Pipelight](/pipelight/) para ejecutar Silverlight desde cualquier navegador que soporte [NPAPI](http://en.wikipedia.org/wiki/NPAPI).
 
 Para este caso existe [Pipelight](https://launchpad.net/pipelight), los mismos desarrolladores pensaron en esta herramienta como una solución para ejecutar Flash, Silverlight y Shockwave Player de Windows en Linux a través de NPAPI.
 
@@ -90,3 +90,7 @@ Y también si quieres compilar la herramienta por tu cuenta lo puedes hacer sigu
     * En Chrome puedes instalar [User Agent Switcher](https://chrome.google.com/webstore/detail/user-agent-switcher-for-c/djflhoibgkdhkhhcedjiklpkjnoahfmg) y escoger Windows Firefox 15 y es todo.
 
 La imagen es original de http://www.iheartubuntu.com/2012/11/ppa-for-netflix-desktop-app.html
+
+# Colaboradores de esta ficha
+
+[Ricardo Rosales](https://github.com/missingcharacter)

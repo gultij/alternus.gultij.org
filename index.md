@@ -13,13 +13,43 @@ Alternativas es una collección de fichas descriptivas con alternativas y rodeos
 
 * Actualizar el sitio conforme haya mejoras en cada caso, de modo que los usuarios que usan Software Libre puedan considerarlos como una opción comercial.
 
-# Listado de fichas
+# Listado de servicios incompatibles con Software Libre
 
 <!-- Listado de páginas  -->
-<ul class="paginas-listado">
-{% for page in site.pages %}
-	{% if page.layout == 'ficha' %}
-	<li class="paginas-listado-entrada">
+<ul class="listado-servicios">
+{% for page in site.pages | sort: 'title' %}
+	{% if page.layout == 'servicio' %}
+	<li class="listado-servicios-entrada">
+		<a href="{{ site.url }}{{ page.url }}">
+			{{ page.title }}
+		</a>
+	</li>
+	{% endif %}
+{% endfor %}
+</ul>
+
+# Listado de plataformas incompatibles con Software Libre
+
+<!-- Listado de páginas  -->
+<ul class="listado-plataformas">
+{% for page in site.pages | sort: 'title' %}
+	{% if page.layout == 'plataforma' %}
+	<li class="listado-plataformas-entrada">
+		<a href="{{ site.url }}{{ page.url }}">
+			{{ page.title }}
+		</a>
+	</li>
+	{% endif %}
+{% endfor %}
+</ul>
+
+# Listado de rodeos y soluciones alternas
+
+<!-- Listado de páginas  -->
+<ul class="listado-alternativas">
+{% for page in site.pages | sort: 'title' %}
+	{% if page.layout == 'alternativa' %}
+	<li class="listado-alternatiass-entrada">
 		<a href="{{ site.url }}{{ page.url }}">
 			{{ page.title }}
 		</a>

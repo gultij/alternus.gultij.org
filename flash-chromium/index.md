@@ -1,6 +1,6 @@
 ---
 title: Chromium y Flash
-layout: ficha
+layout: plataforma
 
 f_creacion: 2014-01-10
 f_revision: 2014-01-10
@@ -38,3 +38,7 @@ Desgraciadamente no hay manera de hacerlo debido a que el desarrollo de flash pa
 
 * Utilizar Google Chrome, si te gusta Chromium es muy probable que Google Chrome cumpla con tus expectativas solo toma en cuenta que estarás usando Software Propietario.
 * Cambiar de navegador, Firefox seguirá soportando NPAPI (hasta el momento de esta publicación) así que podrás seguir utilizando Flash 11.2 en él y otros navegadores que soporten NPAPI.
+
+# Colaboradores de esta ficha
+
+[Ricardo Rosales](https://github.com/missingcharacter)
