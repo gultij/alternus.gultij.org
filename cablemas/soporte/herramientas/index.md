@@ -1,6 +1,6 @@
 ---
 title: Cablemás&#58; página de herramientas de soporte
-layout: ficha
+layout: servicio
 
 f_creacion: 2013-09-28
 f_revision: 2013-09-29

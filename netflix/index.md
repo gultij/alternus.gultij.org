@@ -1,6 +1,6 @@
 ---
 title: Netflix y Linux
-layout: ficha
+layout: servicio
 
 f_creacion: 2014-01-10
 f_revision: 2014-01-10

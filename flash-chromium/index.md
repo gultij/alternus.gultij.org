@@ -1,6 +1,6 @@
 ---
 title: Chromium y Flash
-layout: ficha
+layout: plataforma
 
 f_creacion: 2014-01-10
 f_revision: 2014-01-10
