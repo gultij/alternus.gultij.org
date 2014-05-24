@@ -90,3 +90,7 @@ Y también si quieres compilar la herramienta por tu cuenta lo puedes hacer sigu
     * En Chrome puedes instalar [User Agent Switcher](https://chrome.google.com/webstore/detail/user-agent-switcher-for-c/djflhoibgkdhkhhcedjiklpkjnoahfmg) y escoger Windows Firefox 15 y es todo.
 
 La imagen es original de http://www.iheartubuntu.com/2012/11/ppa-for-netflix-desktop-app.html
+
+# Colaboradores de esta ficha
+
+[Ricardo Rosales](https://github.com/missingcharacter)

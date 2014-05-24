@@ -74,4 +74,4 @@ La dependencia en Windows y sus mecanismos internos es muy profunda. La única m
 
 # Colaborador(es) de esta ficha
 
-Octavio Alvarez, alvarezp@alvarezp.ods.org.
+[Octavio Alvarez](https://github.com/alvarezp)
