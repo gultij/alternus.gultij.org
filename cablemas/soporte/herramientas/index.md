@@ -56,6 +56,12 @@ Búscala en tu distribución. Por ejemplo:
 
 * Bajo Ubuntu... (si sabes cómo es bajo Ubuntu, mándanos la información).
 
+## Acceder a las herramientas de Soporte desde una máquina virtual
+
+Como última alternativa, se puede visitar la página de las [herramientas de Soporte de Cablemás]({{page.liga}}) desde una [máquina virtual corriendo Windows](/virtualbox/windows/).
+
+Es importante considerar que la tarjeta de red de la máquina virtual debe estar configurada como *bridge*. De esta manera, la tarjeta de red de la máquina virtual pertenecerá a la misma red que la máquina real y las pruebas serán confiables. Por defecto, Virtualbox configura las tarjetas de red como *NAT*, lo que altera el comportamiento de la tarjeta y puede llevar a la incorrecta interpretación de los resultados e invalidación de las pruebas.
+
 # Ideas para mejorar la compatibilidad con Software Libre
 
 La dependencia en Windows y sus mecanismos internos es muy profunda. La única manera sería reprogramar todo de alguna manera compatible. Esto no es fácil por las implicaciones de seguridad. Posibilidades:
