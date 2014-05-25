@@ -1,7 +1,7 @@
 name: "Alternativas"
 description: ""
 
-url: "http://alvarezp.github.io/alternativas/"
+url: "http://alvarezp.github.io/alternativas"
 paginate: 10
 
 markdown: rdiscount
