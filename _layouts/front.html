@@ -2,11 +2,21 @@
 
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	{% include global/global-css.html %}
 	<link rel="stylesheet" type="text/css" href="{{ site.url }}/css/default.css" />
+	<link rel="stylesheet" type="text/css" href="{{ site.url }}/css/front.css" />
 </head>
 <body>
 
+{% include global/global-header.html %}
+
+<nav class="breadcrumbs">
+	<p><span class="breadcrumb"><a href="http://www.gultij.org/">Gultij</a></span> » <span class="breadcrumb"><a href="{{ site.url }}/">Alternus</a></span>{% if page.extra_breadcrumb != nil %} » <span class="breadcrumb"><a href="{{ page.url }}">{{ page.extra_breadcrumb }}</a></span>{% endif %}</p>
+</nav>
+
+<main>
 {{content}}
+</main>
 
 </body>
 </html>

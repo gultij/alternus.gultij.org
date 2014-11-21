@@ -1,0 +1,51 @@
+---
+layout: front
+---
+
+<div class="front-para">
+	<p class="front-para"><strong>Alternus</strong> es una colección de fichas descriptivas de
+	alternativas y soluciones a servicios y trámites incompatibles con Software
+	Libre para la ciudad de Tijuana, México.</p>
+</div>
+
+<div class="menu">
+
+	<div class="servicios-incompatibles">
+		<div class="inner">
+			<h1><a href="{{ site.url }}/servicios/">Servicios incompatibles</a></h1>
+			<!-- Listado de servicios -->
+			{% include listado-servicios.html %}
+		</div>
+	</div>
+
+	<div class="tecnologia-incompatible">
+		<div class="inner">
+			<h1><a href="{{ site.url }}/problemas/">Tecnología incompatible</a></h1>
+			<!-- Listado de problemas -->
+			{% include listado-problemas.html %}
+		</div>
+	</div>
+
+	<div class="alternativas">
+		<div class="inner">
+			<h1><a href="{{ site.url }}/alternativas/">Alternativas disponibles</a></h1>
+			<!-- Listado de alternativas -->
+			{% include listado-alternativas.html %}
+		</div>
+	</div>
+
+	<div class="soluciones">
+		<div class="inner">
+			<h1><a href="{{ site.url }}/soluciones/">Soluciones definitivas</a></h1>
+			<!-- Listado de soluciones -->
+			{% include listado-soluciones.html %}
+		</div>
+	</div>
+
+</div>
+
+<div class="front-para">
+	<p class="front-para">¡Tú puedes mejorar esta colección! Si conoces un servicio o trámite
+	incompatible que afecte a un tijuanense y has encontrado una alternativa,
+	haznoslo saber y lo incluiremos en el sitio.</p>
+</div>

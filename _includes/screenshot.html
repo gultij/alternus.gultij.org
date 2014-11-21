@@ -1,0 +1,10 @@
+			{% if page.suppress_screenshot != true %}
+				<section class="screenshot">
+					<a href="{{ page.liga }}">
+						<figure>
+							<img src="screenshot.png">
+							<figcaption>{{ page.liga }}</figcaption>
+						</figure>
+					</a>
+				</section>
+			{% endif %}

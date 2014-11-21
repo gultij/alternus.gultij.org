@@ -7,17 +7,17 @@ layout: front
 Según si tienes cuenta de Github y si sabes manejar Git o si tienes correo electrónico, hay varias formas de participar.
 
 
-## Si cuentas con Github, Git y Jekyll 1.x.
+## Si cuentas con Github, Git y Jekyll >= 1.x.
 
 Este es el método que nos ahorra más trabajo a nosotros.
 
-1. *Forkea* este repositorio usando el botón *Fork* en [la página del repositorio](https://github.com/alvarezp/alternativas.gultij.org).
+1. *Forkea* este repositorio usando el botón *Fork* en [la página del repositorio](https://github.com/alvarezp/alternus.gultij.org).
 
 1. Usando Git, clona el repositorio que se creó en tu cuenta. Si tu nombre de usuario es `nombreusuario`:
 
-   `git clone git@github.com:nombreusuario/alternativas.gultij.org.git`
+   `git clone git@github.com:nombreusuario/alternus.gultij.org.git`
 
-1. Ejecuta `jekyll serve -w --config _config_local.yml` en el directorio raíz del repositorio y visita desde tu navegador [tu copia local de Alternativas](http://localhost:4000).
+1. Ejecuta `jekyll serve -w --config _config_local.yml` en el directorio raíz del repositorio y visita desde tu navegador [tu copia local de *Alternus*](http://localhost:4000).
 
 1. Realiza tus modificaciones. Las fichas están en archivos .md en formato Markdown. Refresca tu navegador para comprobar los cambios.
 
@@ -30,11 +30,11 @@ Este es el método que nos ahorra más trabajo a nosotros.
 
 ## Para contribuir usando Git y Jekyll 1.x, sin Github
 
-1. Usando Git, clona el repositorio de *Alternativas*:
+1. Usando Git, clona el repositorio de *Alternus*:
 
-   `git clone git@github.com:alvarezp/alternativas.gultij.org.git`
+   `git clone git@github.com:alvarezp/alternus.gultij.org.git`
 
-1. Ejecuta `jekyll serve -w --config _config_local.yml` en el directorio raíz del repositorio y visita desde tu navegador [tu copia local de Alternativas](http://localhost:4000).
+1. Ejecuta `jekyll serve -w --config _config_local.yml` en el directorio raíz del repositorio y visita desde tu navegador [tu copia local de *Alternus*](http://localhost:4000).
 
 1. Realiza tus modificaciones. Las fichas están en archivos .md en formato Markdown. Refresca tu navegador para comprobar los cambios.
 
@@ -47,9 +47,9 @@ Este es el método que nos ahorra más trabajo a nosotros.
 
 ## Para contribuir usando sólo Github (no Git, no Jekyll)
 
-1. *Forkea* este repositorio usando el botón *Fork* en [la página del repositorio](https://github.com/alvarezp/alternativas.gultij.org). Esto creará una copia del repositorio en **tu** cuenta.
+1. *Forkea* este repositorio usando el botón *Fork* en [la página del repositorio](https://github.com/alvarezp/alternus.gultij.org). Esto creará una copia del repositorio en **tu** cuenta.
 
-1. Visita esta copia del repositorio en tu cuenta. Si tu nombre de usuario es `nombreusuario`, el repositorio estará en [https://github.com/nombreusuario/alternativas.gultij.org]().
+1. Visita esta copia del repositorio en tu cuenta. Si tu nombre de usuario es `nombreusuario`, el repositorio estará en [https://github.com/nombreusuario/alternus.gultij.org]().
 
 1. Hay un botón llamado "branch: master". Haz clic y cambia la *rama (branch)* por `gh-pages`
 

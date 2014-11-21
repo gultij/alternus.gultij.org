@@ -1,0 +1,100 @@
+html {
+	font-family: 'Droid Sans', sans-serif;
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	color: #111;
+}
+
+a {
+	text-decoration: none;
+	color: #765;
+}
+
+a:hover {
+	color: #000;
+}
+
+nav.global {
+	padding: 0.5em 1em;
+	background: #543;
+	color: white;
+	margin: 0px;
+	overflow:auto;
+	line-height: 1.5em;
+	font-size: 120%
+}
+
+nav.global a {
+	color: white;
+}
+
+nav.global a:hover {
+	color: #eee;
+}
+
+nav.global #gultij-root {
+	float: left;
+	max-width: 50%;
+	overflow:auto;
+}
+
+nav.global #gultij-root a {
+	float: left;
+	overflow:auto;
+	padding-left: 40px;
+	background: url('images/gultij.png') no-repeat left;
+}
+
+nav.global #menu-sitios {
+	max-width: 45%;
+	text-align: right;
+	float: right;
+	padding: 0em 0em 0em 1em;
+}
+
+nav.global #iconos {
+	display: inline-block;
+}
+
+nav.global a.here {
+	font-weight: bold;
+}
+
+nav.global img {
+	height: 1.2em;
+	vertical-align: middle;
+}
+
+#menu-sitios a {
+	margin: 0em 0.35em;
+}
+
+nav.breadcrumbs, nav#breadcrumbs {
+	margin: 0em;
+	padding: 0.5em;
+	background: #f8f8f8;
+	font-weight: bold;
+	text-align: right;
+}
+
+nav.breadcrumbs p, nav#breadcrumbs p {
+	margin: 0em;
+	padding: 0em;
+}
+
+main {
+	background: #f8f8f8;
+	padding: 1em;
+	margin: 0em;
+}
+
+footer.global {
+	background: #543;
+	color: white;
+	padding: 2em;
+	font-size: 70%;
+	text-align: center;
+}
