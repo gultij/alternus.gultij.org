@@ -1,5 +1,5 @@
 html {
-	font-family: 'Droid Sans', sans-serif;
+	font-family: sans-serif;
 }
 
 h1 {
@@ -36,7 +36,7 @@ main .screenshot img {
 }
 
 aside {
-	float: right;
+	float: left;
 	width: 30%;
 }
 
@@ -55,21 +55,6 @@ aside figcaption {
 
 aside section {
 	margin-bottom: 1em;
-}
-
-aside {
-	border: 2px solid black;
-	margin: 0em 1em 1em 1em;
-	padding: 0.5em;
-	min-width: 20em;
-	background: white;
-}
-
-aside .screenshot {
-	display: block;
-	text-align: center;
-	font-size: small;
-	border-radius: 3px;
 }
 
 aside .data table {
@@ -106,11 +91,17 @@ aside .data ul li:first-child {
 }
 
 article {
+	margin-left: 30%;
 	padding-left: 0.5em;
 }
 
-h1 {
-	overflow: hidden;
+main .screenshot {
+	display: block;
+	text-align: center;
+	font-size: small;
+	border: 1px solid black;
+	background: white;
+	border-radius: 3px;
 }
 
 dt {
@@ -128,8 +119,4 @@ p.title {
  	background: #e6c3a1;
 	border-radius: 0.5em;
 	color: #222;
-}
-
-div.menu div {
-	min-width: 45%;
 }

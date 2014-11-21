@@ -1,0 +1,13 @@
+<ul class="listado-servicios">
+{% assign sorted_pages = site.pages | sort: 'title' %}
+{% for page in sorted_pages %}
+	{% if page.layout == 'servicio' %}
+	<li class="listado-servicios-entrada">
+		<a href="{{ site.url }}{{ page.url }}">
+			{{ page.title }}
+		</a>
+	</li>
+	{% endif %}
+{% endfor %}
+</ul>
+

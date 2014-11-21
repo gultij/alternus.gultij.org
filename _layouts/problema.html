@@ -11,7 +11,7 @@
 {% include global/global-header.html %}
 
 <nav class="breadcrumbs">
-	<p><span class="breadcrumb"><a href="http://www.gultij.org/">Gultij</a></span> » <span class="breadcrumb"><a href="{{ site.url }}/">Alternus</a></span> » <span class="breadcrumb"><a href="{{ site.url }}/servicios/">Servicios incompatibles</a></span> » <span class="breadcrumb">{{ page.title }}</span></p>
+	<p><span class="breadcrumb"><a href="http://www.gultij.org/">Gultij</a></span> » <span class="breadcrumb"><a href="{{ site.url }}/">Alternus</a></span> » <span class="breadcrumb"><a href="{{ site.url }}/problemas/">Tecnologías incompatibles</a></span> » <span class="breadcrumb">{{ page.title }}</span></p>
 </nav>
 
 <main>
@@ -26,20 +26,6 @@
 
 						<tr><td>Proveedor</td><td>{{ page.proveedor }}</td></tr>
 
-						{% if page.problemas != nil %}
-						<tr><td>Problemas</td><td><ul>
-								{% for problema in page.problemas %}
-									{% for pag in site.pages %}
-										{% assign test = '/problemas/' | append: problema | append: '/' %}
-										{% if test == pag.url %}
-										<li><a href="{{ pag.url }}">{{ pag.title }}</a></li>
-										{% endif %}
-									{% endfor %}
-								{% endfor %}
-							{% endif %}
-						</ul></td></tr>
-
-						<tr>
 						{% if page.alternativas != nil %}
 						<tr><td>Alternativas</td><td><ul>
 								{% for alternativa in page.alternativas %}
@@ -75,26 +61,31 @@
 	<article>
 		<h1>Sumario</h1>
 
-		{% if page.problemas != nil %}
-			<h2 id="problemas">Tecnologías incompatibles</h2>
-			{{ page.resumens }}
-			<p>Las tecnologías incompatibles utilizadas por este servicio son:</p>
-			<dl>
-			{% for problema in page.problemas %}
-				{% for pag in site.pages %}
+		{% assign first = true %}
+		{% assign sorted_site_pages = site.pages | sort: 'title' %}
+		{% for p in sorted_site_pages %}
+			{% if p.layout == "servicio" %}
+				{% for problema in p.problemas %}
 					{% assign test = '/problemas/' | append: problema | append: '/' %}
-					{% if test == pag.url %}
-					<dt><a href="{{ pag.url }}">{{ pag.title }}</a></dt>
-					<dd>{{ pag.resumen }}</dd>
+					{% if test == page.url %}
+						{% if first == true %}
+							<h2 id="servicios">Servicios afectados</h2>
+							<p>Servicios afectados por esta tecnología:</p>
+							<dl>
+							{% assign first = false %}
+						{% endif %}
+					<dt><a href="{{ p.url }}">{{ p.title }}</a></dt>
+					<dd>{{ p.resumen }}</dd>
 					{% endif %}
 				{% endfor %}
-			{% endfor %}
+			{% endif %}
+		{% endfor %}
+		{% if first == false %}
 			</dl>
 		{% endif %}
 
 		{% if page.alternativas != nil %}
 			<h2 id="alternativas">Alternativas disponibles</h2>
-			{{ page.resumens }}
 			<p>Algunas opciones disponibles para los usuarios son:</p>
 			<dl>
 			{% for alternativa in page.alternativas %}
@@ -111,8 +102,7 @@
 
 		{% if page.soluciones != nil %}
 			<h2 id="soluciones">Soluciones disponibles</h2>
-			{{ page.resumens }}
-			<p>Las opciones de solución definitiva para los desarrolladores de este servicio incluyen:</p>
+			<p>Las opciones de solución definitiva para los desarrolladores de este problema incluyen:</p>
 			<dl>
 			{% for solucion in page.soluciones %}
 				{% for pag in site.pages %}
@@ -130,21 +120,21 @@
 
 		<section class="seguimiento">
 			<h1>Seguimiento y colaboración</h1>
-				{% if page.colaboradores != nil %}
-					<p>Colaboradores: {% for page_colaborador in page.colaboradores %}
-						{% for site_colaborador in site.colaboradores %}
-							{% assign page_col_url = "/colaboradores/" | append: page_colaborador | append: ".html" %}
-							{% if page_col_url == site_colaborador.url %}
-								{% if site_colaborador.liga != nil %}
-									<a href="{{ site_colaborador.liga }}">{{ site_colaborador.nombre }}</a>
-								{% else %}
-									{{ site_colaborador.nombre }}
-								{% endif %}
-							{% endif %}
-						{% endfor %}
-					{% endfor %}
-					</p>
-				{% endif %}
+		{% if page.colaboradores != nil %}
+			<p>Colaboradores: {% for page_colaborador in page.colaboradores %}
+				{% for site_colaborador in site.colaboradores %}
+					{% assign page_col_url = "/colaboradores/" | append: page_colaborador | append: ".html" %}
+					{% if page_col_url == site_colaborador.url %}
+						{% if site_colaborador.liga != nil %}
+							<a href="{{ site_colaborador.liga }}">{{ site_colaborador.nombre }}</a>
+						{% else %}
+							{{ site_colaborador.nombre }}
+						{% endif %}
+					{% endif %}
+				{% endfor %}
+			{% endfor %}
+			</p>
+		{% endif %}
 
 		<p>{% include como-participar.html %}</p>
 		</section>

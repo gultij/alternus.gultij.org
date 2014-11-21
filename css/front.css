@@ -1,0 +1,39 @@
+.menu {
+	text-align: center;
+}
+
+div.servicios-incompatibles, div.tecnologia-incompatible, div.alternativas, div.soluciones {
+	text-align: left;
+	display: inline-block;
+	vertical-align: top;
+	margin: 1em;
+	font-size: 110%;
+	text-align: center;
+}
+
+div.inner {
+	display: inline-block;
+	text-align: left;
+}
+
+div.servicios-incompatibles h1, div.tecnologia-incompatible h1, div.alternativas h1, div.soluciones h1 {
+	border: none;
+}
+
+.menu a {
+	color: #000;
+}
+
+.menu a:hover {
+	color: #765;
+}
+
+div.front-para {
+	font-size: 150%;
+	text-align: center;
+}
+
+p.front-para {
+	width: 80%;
+	display: inline-block;
+}
