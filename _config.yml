@@ -1,8 +1,11 @@
-name: "Alternativas"
+name: "Alternus"
 description: ""
 
-url: "http://alvarezp.github.io/alternativas"
-paginate: 10
+url: "http://alvarezp.github.io/alternus"
+rawcode_url: "https://raw.githubusercontent.com/alvarezp/alternus/master/"
 
 markdown: rdiscount
 permalink: pretty
+
+collections:
+- colaboradores
