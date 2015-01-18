@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-	<link rel="stylesheet" type="text/css" href="{{ site.url }}/css/default.css" />
-	{% include global/global-css.html %}
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/default.css" />
+  {% include global/global-css.html %}
 </head>
 
 <body>
@@ -11,137 +11,136 @@
 {% include global/global-header.html %}
 
 <nav class="breadcrumbs">
-	<p><span class="breadcrumb"><a href="http://www.gultij.org/">Gultij</a></span> » <span class="breadcrumb"><a href="{{ site.url }}/">Alternus</a></span> » <span class="breadcrumb"><a href="{{ site.url }}/problemas/">Tecnologías incompatibles</a></span> » <span class="breadcrumb">{{ page.title }}</span></p>
+  <p><span class="breadcrumb"><a href="http://www.gultij.org/">Gultij</a></span> » <span class="breadcrumb"><a href="{{ site.url }}/">Alternus</a></span> » <span class="breadcrumb"><a href="{{ site.url }}/problemas/">Tecnologías incompatibles</a></span> » <span class="breadcrumb">{{ page.title }}</span></p>
 </nav>
 
 <main>
-	<p class="title">{{ page.title }}</p>
+  <p class="title">{{ page.title }}</p>
 
-	<aside>
-		<div>
-			{% include screenshot.html %}
-			<section class="data">
-				<table>
-					<tbody>
+  <aside>
+    <div>
+      {% include screenshot.html %}
+      <section class="data">
+        <table>
+          <tbody>
 
-						<tr><td>Proveedor</td><td>{{ page.proveedor }}</td></tr>
+            <tr><td>Proveedor</td><td>{{ page.proveedor }}</td></tr>
 
-						{% if page.alternativas != nil %}
-						<tr><td>Alternativas</td><td><ul>
-								{% for alternativa in page.alternativas %}
-									{% for pag in site.pages %}
-										{% assign test = '/alternativas/' | append: alternativa | append: '/' %}
-										{% if test == pag.url %}
-										<li><a href="{{ pag.url }}">{{ pag.title }}</a></li>
-										{% endif %}
-									{% endfor %}
-								{% endfor %}
-							{% endif %}
-						</ul></td></tr>
+            {% if page.alternativas != nil %}
+            <tr><td>Alternativas</td><td><ul>
+                {% for alternativa in page.alternativas %}
+                  {% for pag in site.pages %}
+                    {% assign test = '/alternativas/' | append: alternativa | append: '/' %}
+                    {% if test == pag.url %}
+                    <li><a href="{{ pag.url }}">{{ pag.title }}</a></li>
+                    {% endif %}
+                  {% endfor %}
+                {% endfor %}
+              {% endif %}
+            </ul></td></tr>
 
-						{% if page.soluciones != nil %}
-						<tr><td>Soluciones</td><td><ul>
-								{% for solucion in page.soluciones %}
-									{% for pag in site.pages %}
-										{% assign test = '/soluciones/' | append: solucion | append: '/' %}
-										{% if test == pag.url %}
-										<li><a href="{{ pag.url }}">{{ pag.title }}</a></li>
-										{% endif %}
-									{% endfor %}
-								{% endfor %}
-							{% endif %}
-						</ul></td></tr>
+            {% if page.soluciones != nil %}
+            <tr><td>Soluciones</td><td><ul>
+                {% for solucion in page.soluciones %}
+                  {% for pag in site.pages %}
+                    {% assign test = '/soluciones/' | append: solucion | append: '/' %}
+                    {% if test == pag.url %}
+                    <li><a href="{{ pag.url }}">{{ pag.title }}</a></li>
+                    {% endif %}
+                  {% endfor %}
+                {% endfor %}
+              {% endif %}
+            </ul></td></tr>
 
-					</tbody>
-				</table>
-			</section>
-		</div>
-	</aside>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </aside>
 
-	<article>
-		<h1>Sumario</h1>
+  <article>
+    <h1>Sumario</h1>
 
-		{% assign first = true %}
-		{% assign sorted_site_pages = site.pages | sort: 'title' %}
-		{% for p in sorted_site_pages %}
-			{% if p.layout == "servicio" %}
-				{% for problema in p.problemas %}
-					{% assign test = '/problemas/' | append: problema | append: '/' %}
-					{% if test == page.url %}
-						{% if first == true %}
-							<h2 id="servicios">Servicios afectados</h2>
-							<p>Servicios afectados por esta tecnología:</p>
-							<dl>
-							{% assign first = false %}
-						{% endif %}
-					<dt><a href="{{ p.url }}">{{ p.title }}</a></dt>
-					<dd>{{ p.resumen }}</dd>
-					{% endif %}
-				{% endfor %}
-			{% endif %}
-		{% endfor %}
-		{% if first == false %}
-			</dl>
-		{% endif %}
+    {% assign first = true %}
+    {% assign sorted_site_pages = site.pages | sort: 'title' %}
+    {% for p in sorted_site_pages %}
+      {% if p.layout == "servicio" %}
+        {% for problema in p.problemas %}
+          {% assign test = '/problemas/' | append: problema | append: '/' %}
+          {% if test == page.url %}
+            {% if first == true %}
+              <h2 id="servicios">Servicios afectados</h2>
+              <p>Servicios afectados por esta tecnología:</p>
+              <dl>
+              {% assign first = false %}
+            {% endif %}
+          <dt><a href="{{ p.url }}">{{ p.title }}</a></dt>
+          <dd>{{ p.resumen }}</dd>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+    {% if first == false %}
+      </dl>
+    {% endif %}
 
-		{% if page.alternativas != nil %}
-			<h2 id="alternativas">Alternativas disponibles</h2>
-			<p>Algunas opciones disponibles para los usuarios son:</p>
-			<dl>
-			{% for alternativa in page.alternativas %}
-				{% for pag in site.pages %}
-					{% assign test = '/alternativas/' | append: alternativa | append: '/' %}
-					{% if test == pag.url %}
-					<dt><a href="{{ pag.url }}">{{ pag.title }}</a></dt>
-					<dd>{{ pag.resumen }}</dd>
-					{% endif %}
-				{% endfor %}
-			{% endfor %}
-			</dl>
-		{% endif %}
+    {% if page.alternativas != nil %}
+      <h2 id="alternativas">Alternativas disponibles</h2>
+      <p>Algunas opciones disponibles para los usuarios son:</p>
+      <dl>
+      {% for alternativa in page.alternativas %}
+        {% for pag in site.pages %}
+          {% assign test = '/alternativas/' | append: alternativa | append: '/' %}
+          {% if test == pag.url %}
+          <dt><a href="{{ pag.url }}">{{ pag.title }}</a></dt>
+          <dd>{{ pag.resumen }}</dd>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+      </dl>
+    {% endif %}
 
-		{% if page.soluciones != nil %}
-			<h2 id="soluciones">Soluciones disponibles</h2>
-			<p>Las opciones de solución definitiva para los desarrolladores de este problema incluyen:</p>
-			<dl>
-			{% for solucion in page.soluciones %}
-				{% for pag in site.pages %}
-					{% assign test = '/soluciones/' | append: solucion | append: '/' %}
-					{% if test == pag.url %}
-					<dt><a href="{{ pag.url }}">{{ pag.title }}</a></dt>
-					<dd>{{ pag.resumen }}</dd>
-					{% endif %}
-				{% endfor %}
-			{% endfor %}
-			</dl>
-		{% endif %}
+    {% if page.soluciones != nil %}
+      <h2 id="soluciones">Soluciones disponibles</h2>
+      <p>Las opciones de solución definitiva para los desarrolladores de este problema incluyen:</p>
+      <dl>
+      {% for solucion in page.soluciones %}
+        {% for pag in site.pages %}
+          {% assign test = '/soluciones/' | append: solucion | append: '/' %}
+          {% if test == pag.url %}
+          <dt><a href="{{ pag.url }}">{{ pag.title }}</a></dt>
+          <dd>{{ pag.resumen }}</dd>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+      </dl>
+    {% endif %}
 
-		{{ content }}
+    {{ content }}
 
-		<section class="seguimiento">
-			<h1>Seguimiento y colaboración</h1>
-		{% if page.colaboradores != nil %}
-			<p>Colaboradores: {% for page_colaborador in page.colaboradores %}
-				{% for site_colaborador in site.colaboradores %}
-					{% assign page_col_url = "/colaboradores/" | append: page_colaborador | append: ".html" %}
-					{% if page_col_url == site_colaborador.url %}
-						{% if site_colaborador.liga != nil %}
-							<a href="{{ site_colaborador.liga }}">{{ site_colaborador.nombre }}</a>
-						{% else %}
-							{{ site_colaborador.nombre }}
-						{% endif %}
-					{% endif %}
-				{% endfor %}
-			{% endfor %}
-			</p>
-		{% endif %}
+    <section class="seguimiento">
+      <h1>Seguimiento y colaboración</h1>
+    {% if page.colaboradores != nil %}
+      <p>Colaboradores: {% for page_colaborador in page.colaboradores %}
+        {% for site_colaborador in site.colaboradores %}
+          {% assign page_col_url = "/colaboradores/" | append: page_colaborador | append: ".html" %}
+          {% if page_col_url == site_colaborador.url %}
+            {% if site_colaborador.liga != nil %}
+              <a href="{{ site_colaborador.liga }}">{{ site_colaborador.nombre }}</a>
+            {% else %}
+              {{ site_colaborador.nombre }}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+      </p>
+    {% endif %}
 
-		<p>{% include como-participar.html %}</p>
-		</section>
-	</article>
+    <p>{% include como-participar.html %}</p>
+    </section>
+  </article>
 
 </main>
 
 </body>
 </html>
-
