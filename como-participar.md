@@ -17,7 +17,9 @@ Este es el método que nos ahorra más trabajo a nosotros.
 
    `git clone git@github.com:nombreusuario/alternus.gultij.org.git`
 
-1. Ejecuta `jekyll serve -w --config _config_local.yml` en el directorio raíz del repositorio y visita desde tu navegador [tu copia local de *Alternus*](http://localhost:4000).
+1. Asegurate de tener instalado jekyll y rdiscount `gem install jekyll rdiscount`
+
+1. Ejecuta `jekyll serve -w --config _config_local.yml` o `./montar_server.sh` en el directorio raíz del repositorio y visita desde tu navegador [tu copia local de *Alternus*](http://localhost:4000).
 
 1. Realiza tus modificaciones. Las fichas están en archivos .md en formato Markdown. Refresca tu navegador para comprobar los cambios.
 
@@ -34,7 +36,7 @@ Este es el método que nos ahorra más trabajo a nosotros.
 
    `git clone git@github.com:alvarezp/alternus.gultij.org.git`
 
-1. Ejecuta `jekyll serve -w --config _config_local.yml` en el directorio raíz del repositorio y visita desde tu navegador [tu copia local de *Alternus*](http://localhost:4000).
+1. Ejecuta `jekyll serve -w --config _config_local.yml` o `./montar_server.sh` en el directorio raíz del repositorio y visita desde tu navegador [tu copia local de *Alternus*](http://localhost:4000).
 
 1. Realiza tus modificaciones. Las fichas están en archivos .md en formato Markdown. Refresca tu navegador para comprobar los cambios.
 
